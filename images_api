@@ -1,0 +1,15 @@
+server {
+    listen 443 ssl;
+    include snippets/self-signed.conf;
+    include snippets/ssl-params.conf;
+    server_name 138.68.111.51;
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/var/projects/visionlabs/test/images_api.sock;
+    }
+}
+server {
+    listen 80;
+    server_name 138.68.111.51;
+    return 301 https://$server_name$request_uri;
+}
