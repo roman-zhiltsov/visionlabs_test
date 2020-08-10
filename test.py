@@ -2,7 +2,7 @@ import base64
 import json
 import unittest
 
-from api import app
+from app import app
 
 
 class TestFlaskApi(unittest.TestCase):

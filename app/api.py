@@ -4,7 +4,7 @@ from datetime import datetime as dt
 import os
 import uuid
 
-from api import app
+from app import app
 from flask import jsonify
 from flask import request
 from flask import send_file
