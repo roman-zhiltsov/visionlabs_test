@@ -1,5 +1,5 @@
 #!/bin/bash
-app="docker.visionlabs_test"
+app="visionlabs_test"
 docker build -t ${app} .
 docker run -d -p 56733:80 \
   --name=${app} \
