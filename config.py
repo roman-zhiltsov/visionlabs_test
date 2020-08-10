@@ -1,1 +1,1 @@
-IMAGE_DIR = '/var/projects/visionlabs/test/images'
+IMAGE_DIR = '/var/projects/visionlabs/images'
