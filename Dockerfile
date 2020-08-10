@@ -3,6 +3,5 @@ RUN apk --update add bash mc
 ENV STATIC_URL /static
 ENV STATIC_PATH /var/www/app/static
 RUN mkdir -p /var/projects/visionlabs/test/images
-COPY ./images /var/projects/visionlabs/test/images
 COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
